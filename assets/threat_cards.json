@@ -1,0 +1,398 @@
+[
+  {
+    "name": "Flagship",
+    "health": 4,
+    "effect": "DMG",
+    "dmg": 3,
+    "activatedBy": [4, 5, 6],
+    "imgFile": "0.png"
+  },
+
+  {
+    "name": "Solar Winds",
+    "effect": "DMG",
+    "health": -1,
+    "discardAfterUse": true,
+    "dmg": 5,
+    "activatedBy": [2],
+    "imgFile": "1.png"
+  },
+
+  {
+    "name": "Intercepter",
+    "health": 3,
+    "effect": "DMG",
+    "dmg": 1,
+    "activatedBy": [1, 2, 3, 4, 5],
+    "imgFile": "2.png"
+  },
+
+  {
+    "name": "Scouting Ship",
+    "health": 3,
+    "effect": "LOSE_1_ADDITIONAL_HULL",
+    "dmg": 1,
+    "imgFile": "3.png"
+  },
+
+  {
+    "name": "Raiders",
+    "health": 2,
+    "effect": "DMG_IGNORE_SHIELDS",
+    "dmg": 2,
+    "activatedBy": [2, 6],
+    "imgFile": "4.png"
+  },
+
+  {
+    "name": "Boarding Ship",
+    "health": 4,
+    "effect": "DMG",
+    "effectWhenDestroyed": "SEND_TACTICAL_TO_INFIRMARY_IF_AWAY_MISSION",
+    "dmg": 2,
+    "activatedBy": [3, 4],
+    "dealtWith": [{
+      "num": 1,
+      "members": "TACTICAL"
+    }],
+    "imgFile": "5.png"
+  },
+
+  {
+    "name": "Space Pirates",
+    "health": 3,
+    "effect": "DMG",
+    "dmg": 2,
+    "activatedBy": [1, 3],
+    "imgFile": "6.png"
+  },
+
+  {
+    "name": "Raiders",
+    "health": 2,
+    "effect": "DMG_IGNORE_SHIELDS",
+    "dmg": 2,
+    "activatedBy": [4, 6],
+    "imgFile": "7.png"
+  },
+
+  {
+    "name": "Raiders",
+    "health": 2,
+    "effect": "DMG_IGNORE_SHIELDS",
+    "dmg": 2,
+    "activatedBy": [1, 4],
+    "imgFile": "8.png"
+  },
+
+  {
+    "name": "Meteoroid",
+    "health": 4,
+    "effect": "LOSE_1_HEALTH",
+    "effectWhenDestroyed": "DMG",
+    "dmg": 5,
+    "activatedBy": [1],
+    "imgFile": "9.png"
+  },
+
+  {
+    "name": "Drone",
+    "health": 1,
+    "effect": "DMG",
+    "dmg": 1,
+    "activatedBy": [2, 4, 6],
+    "imgFile": "10.png"
+  },
+
+  {
+    "name": "Bounty Ship",
+    "health": 4,
+    "effect": "DESTROY_ALL_SHIELDS_AND_DMG",
+    "dmg": 1,
+    "activatedBy": [1, 2],
+    "imgFile": "11.png"
+  },
+
+  {
+    "name": "Bomber",
+    "health": 3,
+    "effect": "SEND_UNIT_INFIRMARY_AND_DMG",
+    "dmg": 1,
+    "activatedBy": [3, 4],
+    "imgFile": "12.png"
+  },
+
+  {
+    "name": "Space Pirates",
+    "health": 2,
+    "effect": "DMG",
+    "dmg": 2,
+    "activatedBy": [3, 6],
+    "imgFile": "13.png"
+  },
+
+  {
+    "name": "Intercepter X",
+    "health": 4,
+    "effect": "DMG",
+    "dmg": 1,
+    "activatedBy": [1, 2, 3, 4, 5],
+    "imgFile": "14.png"
+  },
+
+  {
+    "name": "Space Pirates",
+    "health": 2,
+    "effect": "DMG",
+    "dmg": 2,
+    "activatedBy": [3, 6],
+    "imgFile": "15.png"
+  },
+
+  {
+    "name": "Drone",
+    "health": 1,
+    "effect": "DMG",
+    "dmg": 1,
+    "activatedBy": [3, 5],
+    "imgFile": "16.png"
+  },
+
+  {
+    "name": "Hijackers",
+    "health": 4,
+    "effect": "DMG",
+    "dmg": 2,
+    "activatedBy": [4, 5],
+    "dealtWith": [{
+      "num": 2,
+      "members": "COMMANDER"
+    }],
+    "imgFile": "17.png"
+  },
+
+  {
+    "name": "Corsair",
+    "health": 2,
+    "effect": "DMG",
+    "dmg": 2,
+    "activatedBy": [4, 5, 6],
+    "imgFile": "18.png"
+  },
+
+  {
+    "type": "INTERNAL",
+    "name": "Friendly Fire",
+    "effect": "ALL_TACTICAL_TO_INFIRMARY",
+    "discardAfterUse": true,
+    "imgFile": "19.png"
+  },
+
+  {
+    "type": "INTERNAL",
+    "name": "Cosmic Existentialism",
+    "effect": "PREVENT_SCIENCE_ASSIGNATION_EXCEPT_TO_THIS_CARD",
+    "dealtWith": [{
+      "num": 1,
+      "members": "SCIENCE"
+    }],
+    "imgFile": "20.png"
+  },
+
+  {
+    "name": "Nebula",
+    "health": 3,
+    "effect": "SHIELDS_OFFLINE_AND_LOSE_HEALTH",
+    "effectWhenDestroyed": "SHIELDS_ONLINE",
+    "activatedBy": [1, 2, 3, 4, 5],
+    "imgFile": "21.png"
+  },
+
+  {
+    "name": "Mercenary",
+    "health": 3,
+    "effect": "NO_THREATS_ACTIVATED_THIS_TURN_THEN_DMG",
+    "dmg": 2,
+    "imgFile": "22.png"
+  },
+
+  {
+    "name": "Assault Cruiser",
+    "health": 4,
+    "effect": "DMG",
+    "dmg": 2,
+    "activatedBy": [4, 5],
+    "imgFile": "24.png"
+  },
+
+  {
+    "type": "INTERNAL",
+    "name": "Distracted",
+    "health": -1,
+    "effect": "HOLD_RANDOM_UNIT",
+    "effectWhenDestroyed": "RETURN_UNIT_HELD",
+    "activatedBy": [4, 3],
+    "dealtWith": [{
+      "num": 2,
+      "members": "Medical"
+    }],
+    "imgFile": "25.png"
+  },
+
+  {
+    "type": "INTERNAL",
+    "name": "Time Warp",
+    "effect": "ALL_THREATS_RECOVER_1_DMG",
+    "activatedBy": [2],
+    "dealtWith": [{
+      "num": 2,
+      "members": "SCIENCE"
+    }],
+    "imgFile": "26.png"
+  },
+
+  {
+    "name": "Bomber",
+    "health": 2,
+    "effect": "SEND_UNIT_INFIRMARY_AND_DMG",
+    "dmg": 2,
+    "activatedBy": [2, 4],
+    "imgFile": "27.png"
+  },
+
+  {
+    "type": "INTERNAL",
+    "name": "Boost Morale",
+    "effect": "RETURN_DETECTED_THREAT",
+    "discardAfterUse": true,
+    "activatedBy": [6],
+    "imgFile": "28.png"
+  },
+
+  {
+    "type": "INTERNAL",
+    "name": "Panel Explosion",
+    "effect": "PREVENT_ENGINEERING_ASSIGNATION",
+    "dealtWith": [{
+      "num": 1,
+      "members": "MEDICAL"
+    }],
+    "imgFile": "29.png"
+  },
+
+  {
+    "name": "Assault Cruiser",
+    "health": 4,
+    "effect": "DMG",
+    "dmg": 2,
+    "activatedBy": [1, 2],
+    "imgFile": "30.png"
+  },
+
+  {
+    "type": "INTERNAL",
+    "name": "Pandemic",
+    "effect": "SEND_UNIT_TO_INFIRMARY",
+    "activatedBy": [1],
+    "dealtWith": [{
+      "num": 1,
+      "members": "SCIENCE"
+    }, {
+      "num": 1,
+      "members": "MEDICAL"
+    }],
+    "imgFile": "31.png"
+  },
+
+  {
+    "type": "INTERNAL",
+    "name": "Invaders",
+    "effect": "SEND_UNIT_TO_INFIRMARY",
+    "activatedBy": [2, 4],
+    "dealtWith": [{
+      "num": 2,
+      "members": "TACTICAL"
+    }],
+    "imgFile": "32.png"
+  },
+
+  {
+    "name": "Bomber",
+    "health": 2,
+    "effect": "SEND_UNIT_INFIRMARY_AND_DMG",
+    "dmg": 1,
+    "activatedBy": [2, 4],
+    "imgFile": "33.png"
+  },
+
+  {
+    "type": "INTERNAL",
+    "name": "Comms Offline",
+    "effect": "PREVENT_COMMANDER_ASSIGNATION",
+    "dealtWith": [{
+      "num": 1,
+      "members": "ENGINEERING"
+    }],
+    "imgFile": "34.png"
+  },
+
+  {
+    "type": "INTERNAL",
+    "name": "Robot Uprising",
+    "effect": "SEND_UNIT_TO_INFIRMARY",
+    "activatedBy": [1, 2, 3],
+    "dealtWith": [{
+      "num": 1,
+      "members": "ENGINEERING"
+    }],
+    "imgFile": "35.png"
+  },
+
+  {
+    "name": "Don't Panic!",
+    "effect": "NONE",
+    "effectWhenDestroyed": "NONE",
+    "discardAfterUse": true,
+    "imgFile": "dont_panic.png"
+  },
+
+  {
+    "name": "Don't Panic!",
+    "effect": "NONE",
+    "effectWhenDestroyed": "NONE",
+    "discardAfterUse": true,
+    "imgFile": "dont_panic.png"
+  },
+
+  {
+    "name": "Don't Panic!",
+    "effect": "NONE",
+    "effectWhenDestroyed": "NONE",
+    "discardAfterUse": true,
+    "imgFile": "dont_panic.png"
+  },
+
+  {
+    "name": "Don't Panic!",
+    "effect": "NONE",
+    "effectWhenDestroyed": "NONE",
+    "discardAfterUse": true,
+    "imgFile": "dont_panic.png"
+  },
+
+  {
+    "name": "Don't Panic!",
+    "effect": "NONE",
+    "effectWhenDestroyed": "NONE",
+    "discardAfterUse": true,
+    "imgFile": "dont_panic.png"
+  },
+
+  {
+    "name": "Don't Panic!",
+    "effect": "NONE",
+    "effectWhenDestroyed": "NONE",
+    "discardAfterUse": true,
+    "imgFile": "dont_panic.png"
+  }
+]
